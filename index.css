@@ -1,181 +1,139 @@
-/* Estilos generales */
-body, html {
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
-.u-section-1 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/photo-1505533321630-975218a5f66f.jpeg') no-repeat center center;
-  background-size: cover;
-  min-height: 100vh;
-  color: #fff;
-  padding: 100px 20px 60px;
-}
-
-.u-header {
-  padding: 15px 20px;
-}
-
-.u-container-logo-text {
-  display: flex;
-  align-items: center;       /* Centrado vertical */
-  gap: 15px;                 /* Espacio entre imagen y texto */
-}
-
-.u-logo-image {
-  width: 60px;               /* Tamaño reducido de la imagen */
-  height: auto;
-}
-
-.u-site-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: rgb(2, 1, 1);
-  margin: 0;
-}
-
-.u-logo-image {
-  width: 70px;
-  height: 70px;
-}
-
-
-/* Título */
-.u-section-1 .u-text-1 {
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-/* Contenedor de tarjetas */
-.u-section-1 .u-layout-wrap-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-/* Tarjeta base */
-.u-section-1 .u-layout-cell {
-  background: white;
-  color: #333;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  flex: 1 1 300px;
-  max-width: 340px;
-  padding: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.u-section-1 .u-layout-cell:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
-}
-
-/* Imágenes dentro de las tarjetas */
-.u-section-1 .u-layout-cell img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 20px;
-  object-fit: contain;
-}
-
-/* Textos de tarjetas */
-.u-section-1 .u-layout-cell .u-text {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-/* Sección 2 */
-.u-section-2 {
-  background: #f7f7f7;
-  padding: 60px 20px;
+body {
   color: #333;
 }
 
-.u-section-2 .u-layout-wrap-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.u-section-2 .u-layout-cell {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  flex: 1 1 300px;
-  max-width: 340px;
-  padding: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.u-section-2 .u-layout-cell:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
-}
-
-.u-section-2 .u-layout-cell img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 20px;
-}
-
-.u-section-2 .u-text {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-/* Responsive */
-@media (max-width: 767px) {
-  .u-section-1 .u-text-1 {
-    font-size: 36px;
-  }
-
-  .u-section-1,
-  .u-section-2 {
-    padding: 60px 10px;
-  }
-}
-
+/* Header styles */
 .u-header {
+  background-color: #ffffff;
   padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
 }
 
 .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.date-time {
-      font-size: 16px;
-      color: rgb(6, 6, 6);
-      font-weight: bold;
-}
+
 .u-container-logo-text {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 .u-logo-image {
-      width: 80px;
-      height: 80px;
+  width: 60px;
+  height: 60px;
 }
+
 .u-site-title {
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.date-time {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Main content with background image */
+.main-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('images/photo-1505533321630-975218a5f66f.jpeg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Title */
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Weather boxes container */
+.weather-boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual weather box */
+.weather-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+.weather-box:hover {
+  transform: translateY(-5px);
+}
+
+.weather-box img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.weather-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.weather-box p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Gap between first and second row */
+.gap-1cm {
+  height: 1cm;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  
+  .weather-box {
+    width: 100%;
+    max-width: 300px;
+  }
 }
